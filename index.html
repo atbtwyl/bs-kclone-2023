@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+        </svg>
+      </div>
+      <div class="status-bar__column">
+        <span> 18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>111%</span>
+        <i class="fa-solid fa-battery-full fa-xl"></i>
+        <i class="fa-solid fa-bolt-lightning"></i>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to VV WORLD</h1>
+        <p class="welcome-header__text">log in with VVID if you have one</p>
+    </header>
+
+    <!-- method는 get & post 방법 두가지가 있음.
+    get 은 보안에 취약함 URL에 아이디 비번이 그대로 노출
+    post는 백엔드 서버가 있으면 서버로 보내는데 사용하는데
+    서버가 없으니 get을 쓰던 post를 쓰던 동작은 같음
+    즉 URL에 정보가 다 들어감. -->
+<form action="friends.html" method="get" id="login-form">
+    <input name="username" type="text" placeholder="VVID" />
+    <input name="password" type="password" placeholder="Password" />
+    <input type="submit" value="Log In" />
+    <a href="#">Find VVID or Password </a>
+</form>
+
+<div id="splash-screen__index">
+  <i class="fa-solid fa-comment"></i>
+</div>
+    
+
+<div id="no-mobile">
+  <span>Your screen is too big</span>
+</div>
+
+
+
+    <script
+    src="https://kit.fontawesome.com/3867bde971.js"
+    crossorigin="anonymous"
+  ></script>
+
+
+  </body>
+</html>

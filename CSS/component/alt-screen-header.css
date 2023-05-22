@@ -1,0 +1,45 @@
+.alt-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--horizontal-space);
+    padding-top: 60px;
+    margin-bottom: 15px;
+    opacity: 90%; 
+}
+
+.alt-header__column {
+    /* ↓ 요거랑 */
+    width: 33%;
+}
+
+.alt-header__title {
+    font-size:20px;
+    font-weight: 800;
+}
+
+
+.alt-header__column:first-child {
+    margin-right:auto;
+}
+
+.alt-header__column:nth-child(2) {
+    /* ↓ 요거랑 */
+    text-align: center;
+}
+
+.alt-header__column:last-child {
+    margin-left:auto;
+
+    /* ↓ 요거랑 */
+    display:flex;
+    justify-content: flex-end;
+}
+
+.alt-header__column span:last-child{
+    margin-left:15px;
+}
+
+
+/* 위에 '요거랑' 표시되어 있는 애들이 
+    화면중앙맞추기방법임 !! */
